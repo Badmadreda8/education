@@ -124,7 +124,7 @@ line-height: 75px;
 
     padding: 15px 20px;
 
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
     display: flex;
@@ -147,7 +147,7 @@ line-height: 75px;
 }
     
 .trand-container.first {
-    background-image: url(../images/trend1.jpg);
+    background-image: url(/education/images/trend1.jpg);
 }
 
 .trand-container.second {
