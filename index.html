@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <div class="pop-up">
+        <div class="close"></div>
+        <form class="pop-up-form">
+            <h3 class="side-bar-title pop-up-title">Ваш фидбек</h3>
+
+            <p class="pop-up-text">Как часто вы заходите на сайт?</p>
+            <select class="pop-up-select">
+                <option value="Почти каждый день">Почти каждый день</option>
+                <option value="Раз в несколько дней">Раз в несколько дней</option>
+                <option value="Раз в несколько недель">Раз в несколько недель</option>
+                <option value="Несколько раз в год">Несколько раз в год</option>
+            </select>
+
+            <p class="pop-up-text">Вы подписаны на e-mail рассылку?</p>
+
+            <input class="radio-input" type="radio" id="yes" name="choice">
+            <label class="radio-label" for="yes"></label>
+            <span>Yes</span>
+
+            <input class="radio-input" type="radio" id="no" name="choice">
+            <label class="radio-label" for="no"></label>
+            <span>No</span>
+
+            <p class="pop-up-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+            <textarea class="comment" placeholder="Может, больше рецептов?"></textarea>
+
+            <button class="button-feedback" type="submit">Отправить</button>
+        </form>
+
+    </div>
+
     <header class="header">
         <div class="header-container">
             
@@ -470,7 +502,7 @@
     
     </div>
 
-    <section class="products-container">
+    <section class="shop">
 
         <h3 class="side-bar-title horizont">Наши изделия</h3>
 
@@ -488,7 +520,7 @@
                             <p class="last-price">1000Р</p>
                             <p class="price">800Р</p>
                         </div>
-                        <btn class="btn-product" type="submit">В магазин</btn>
+                        <button class="btn-product" type="submit">В магазин</button>
                     </div>
                 </div>
             </div>
@@ -504,7 +536,7 @@
                         <div>
                             <p class="price">3500Р</p>
                         </div>
-                        <btn class="btn-product" type="submit">В магазин</btn>
+                        <button class="btn-product" type="submit">В магазин</button>
                     </div>
                 </div>
             </div>
@@ -521,7 +553,7 @@
                             <p class="last-price">500Р</p>
                             <p class="price">400Р</p>
                         </div>
-                        <btn class="btn-product" type="submit">В магазин</btn>
+                        <button class="btn-product" type="submit">В магазин</button>
                     </div>
                 </div>
             </div>
