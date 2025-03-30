@@ -8,12 +8,15 @@
 </head>
 <body>
 
-    <div class="pop-up">
-        <div class="close"></div>
+    <div class="pop-up hidden">
+        
         <form class="pop-up-form">
+            <div class="close"></div>
+            
             <h3 class="side-bar-title pop-up-title">Ваш фидбек</h3>
 
             <p class="pop-up-text">Как часто вы заходите на сайт?</p>
+
             <select class="pop-up-select">
                 <option value="Почти каждый день">Почти каждый день</option>
                 <option value="Раз в несколько дней">Раз в несколько дней</option>
@@ -25,16 +28,18 @@
 
             <input class="radio-input" type="radio" id="yes" name="choice">
             <label class="radio-label" for="yes"></label>
-            <span>Yes</span>
+            <span class="choice-text">Yes</span>
 
             <input class="radio-input" type="radio" id="no" name="choice">
             <label class="radio-label" for="no"></label>
-            <span>No</span>
+            <span class="choice-text">No</span>
 
             <p class="pop-up-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+
             <textarea class="comment" placeholder="Может, больше рецептов?"></textarea>
 
             <button class="button-feedback" type="submit">Отправить</button>
+
         </form>
 
     </div>
@@ -76,6 +81,8 @@
         
                 </ul>
             </nav>
+            <div class="burger"></div>
+
             </div>
         
             <h1 class="header-titlle">Блог о творчестве, спорте,
@@ -440,7 +447,7 @@
                     </div>
             
                 </div>
-        
+                
                 <form class="search-form" method="post" action="">
                 <label class="field-caption">
                     <span class="hidden">Search</span>
@@ -509,8 +516,13 @@
         <div class="products">
 
             <div class="product">
-                <img class="product-img" src="images/shop-item-desk1.jpg">
 
+                <picture>
+                    <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/shop-item-tablet1.jpg" media="(min-width:641px) and (max-width:1199px)">
+                    <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                    <img class="product-img" srcset="images/shop-item-desk1.jpg" alt="Подушка">
+                </picture>
                 <div class="product-content">
                     <h4 class="product-title">Подушки на диван</h4>
                     <p class="product-discription">Набор из двух подушек с модными принтами. Видео о создании <a class="product-link" href="#">здесь.</a></p>
@@ -526,7 +538,13 @@
             </div>
 
             <div class="product">
-                <img class="product-img" src="images/shop-item-desk2.jpg">
+
+                <picture>
+                    <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/shop-item-tablet2.jpg" media="(min-width:641px) and (max-width:1199px)">
+                    <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                    <img class="product-img" src="images/shop-item-desk2.jpg" alt="Зайчик">
+                </picture>
 
                 <div class="product-content">
                     <h4 class="product-title">Кукла "зайчик"</h4>
@@ -542,7 +560,13 @@
             </div>
 
             <div class="product">
-                <img class="product-img" src="images/shop-item-desk3.jpg">
+
+                <picture>
+                    <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/shop-item-tablet3.jpg" media="(min-width:641px) and (max-width:1199px)">
+                    <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                    <img class="product-img" src="images/shop-item-desk3.jpg" alt="Рамка">
+                </picture>
 
                 <div class="product-content">
                     <h4 class="product-title">Шестиугольная рамка</h4>
