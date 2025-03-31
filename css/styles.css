@@ -98,23 +98,28 @@ body {
 }
 
 .radio-input {
-    vertical-align: middle;
+    visibility: hidden;
 }
 
-.radio-input {
-    display: none;
+.choice-text {
+    position: relative;
 }
 
-.radio-input + label {
-    background: url(../svg/form-empty-circle.svg) no-repeat scroll 0 0;
+.choice-text::before {
+    position: absolute;
+    content: '';
+   display: inline-block;
 
-    cursor: pointer;
-    padding-left: 25px;
+   width: 20px;
+   height: 20px;
+
+   background-image: url(/svg/form-empty-circle.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 20px;
 }
 
-.radio-input:checked + label {
-    background: url(../svg/form-circle.svg) no-repeat scroll 0 0;
-}
+
 
 .comment {
     font-family: inherit;
