@@ -8,21 +8,21 @@
 </head>
 <body>
 
-    <div class="pop-up ">
+    <div class="pop-up hidden">
         
         <form class="pop-up-form">
             <div class="close"></div>
             
             <h3 class="side-bar-title pop-up-title">Ваш фидбек</h3>
 
-            <p class="pop-up-text">Как часто вы заходите на сайт?</p>
-
-            <select class="pop-up-select">
-                <option value="Почти каждый день">Почти каждый день</option>
-                <option value="Раз в несколько дней">Раз в несколько дней</option>
-                <option value="Раз в несколько недель">Раз в несколько недель</option>
-                <option value="Несколько раз в год">Несколько раз в год</option>
-            </select>
+            <label class="pop-up-text">Как часто вы заходите на сайт?
+                <select class="pop-up-select">
+                    <option value="Почти каждый день">Почти каждый день</option>
+                    <option value="Раз в несколько дней">Раз в несколько дней</option>
+                    <option value="Раз в несколько недель">Раз в несколько недель</option>
+                    <option value="Несколько раз в год">Несколько раз в год</option>
+                </select>
+            </label>
 
             <p class="pop-up-text">Вы подписаны на e-mail рассылку?</p>
 
@@ -36,9 +36,9 @@
                 <span class="choice-text">Нет</span>
             </label>
 
-            <p class="pop-up-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-
+            <label class="pop-up-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
             <textarea class="comment" placeholder="Может, больше рецептов?"></textarea>
+            </label>
 
             <button class="button-feedback" type="submit">Отправить</button>
 
@@ -98,7 +98,7 @@
         <h2 class="side-bar-title horizont">Сейчас в тренде</h2>
 
         <div class="trand">
-            <div class="trand-container first">
+            <article class="trand-container first">
                 <div class="trand-item">
 
                     <ul class="main-menu-list">
@@ -113,9 +113,9 @@
                     <h3 class="main-title"><a href="#0" class= "trand-title-link">Сейчас в тренде: сад на подоконнике</a></h3>
                 
                 </div>
-            </div>
+            </article>
 
-            <div class="trand-container second">
+            <article class="trand-container second">
                 <div class="trand-item">
 
                     <ul class="main-menu-list">
@@ -127,9 +127,9 @@
                     <h3 class="main-title"><a href="#0" class= "trand-title-link">Сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
                 
                 </div>
-            </div>
+            </article>
 
-            <div class="trand-container third">
+            <article class="trand-container third">
                 <div class="trand-item">
 
                     <ul class="main-menu-list">
@@ -144,9 +144,9 @@
                     <h3 class="main-title"><a href="#0" class= "trand-title-link">Собираемся в первый поход в горы</a></h3>
                 
                 </div>
-            </div>
+            </article>
 
-            <div class="trand-container fourth">
+            <article class="trand-container fourth">
                 <div class="trand-item">
 
                     <ul class="main-menu-list">
@@ -161,7 +161,7 @@
                     <h3 class="main-title"><a href="#0" class= "trand-title-link">Сейчас в тренде: сколько витамина С в лимонах?</a></h3>
                 
                 </div>
-            </div>
+            </article>
         </div>
 
     </section>
@@ -513,11 +513,11 @@
 
     <section class="shop">
 
-        <h3 class="side-bar-title horizont">Наши изделия</h3>
+        <h2 class="side-bar-title horizont">Наши изделия</h2>
 
         <div class="products">
 
-            <div class="product">
+            <article class="product">
 
                 <picture>
                     <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
@@ -526,7 +526,7 @@
                     <img class="product-img" srcset="images/shop-item-desk1.jpg" alt="Подушка">
                 </picture>
                 <div class="product-content">
-                    <h4 class="product-title">Подушки на диван</h4>
+                    <h3 class="product-title">Подушки на диван</h3>
                     <p class="product-discription">Набор из двух подушек с модными принтами. Видео о создании <a class="product-link" href="#">здесь.</a></p>
 
                     <div class="product-price">
@@ -537,9 +537,9 @@
                         <button class="btn-product" type="submit">В магазин</button>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="product">
+            <article class="product">
 
                 <picture>
                     <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
@@ -549,7 +549,7 @@
                 </picture>
 
                 <div class="product-content">
-                    <h4 class="product-title">Кукла "зайчик"</h4>
+                    <h3 class="product-title">Кукла "зайчик"</h3>
                     <p class="product-discription">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="product-link" href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p>
 
                     <div class="product-price">
@@ -559,9 +559,9 @@
                         <button class="btn-product" type="submit">В магазин</button>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="product">
+            <article class="product">
 
                 <picture>
                     <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
@@ -571,7 +571,7 @@
                 </picture>
 
                 <div class="product-content">
-                    <h4 class="product-title">Шестиугольная рамка</h4>
+                    <h3 class="product-title">Шестиугольная рамка</h3>
                     <p class="product-discription">Необычная рамка для украшения дома из видео <a class="product-link" href="#">"Как сделать рамку из подручных средств за 30 минут"</a></p>
 
                     <div class="product-price">
@@ -582,7 +582,7 @@
                         <button class="btn-product" type="submit">В магазин</button>
                     </div>
                 </div>
-            </div>
+            </article>
 
         </div>
 
